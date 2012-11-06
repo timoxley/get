@@ -20,15 +20,16 @@ the the additional arguments.
 
 Sorry for namespaced package, all good names taken.
 
-## Example
+## Usage
 
 ```js
 // browser
 var get = require('get')
-
 // node
 var get = require('timoxley-get')
 ```
+
+## Examples
 
 ### Before
 ```js
