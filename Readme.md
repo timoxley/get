@@ -24,7 +24,7 @@ Horrible anonymous wrapper is required to map the `length` property.
 ['apple', 'banana', 'pineapple'].map(function(str) {
  return str.length
 })
-// Result [5, 6, 9]
+// => [5, 6, 9]
 ```
 
 ### After
@@ -32,7 +32,7 @@ Wow. Much cleaner.
 
 ```js
 ['apple', 'banana', 'pineapple'].map(get('length'))
-// Result [5, 6, 9]
+// => [5, 6, 9]
 ```
 
 ### Use `get` to evaluate methods
@@ -40,7 +40,7 @@ Wow. Much cleaner.
 ```js
 // Calls the 'italics' method on each supplied item
 ['apple', 'banana', 'pineapple'].map(get('italics'))
-// Result: ['<i>apple</i>', '<i>banana</i>', '<i>pineapple</i>']
+// => ['<i>apple</i>', '<i>banana</i>', '<i>pineapple</i>']
 ```
 
 ### Use `get` to evaluate methods, passing in arguments
@@ -48,7 +48,7 @@ Wow. Much cleaner.
 ```js
 // Calls the 'substr' method, passing in arguments
 ['apple', 'banana', 'pineapple'].map(get('substr', 0, 1))
-// Result: ['a', 'b', 'p']
+// => ['a', 'b', 'p']
 ```
 
 ## Convoluted Description:
