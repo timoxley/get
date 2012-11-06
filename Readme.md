@@ -3,31 +3,17 @@
 Create functions for use with functional methods like  `map`, `reduce`,
 `filter`, etc. that get object properties without need of anonymous wrappers.
 
-### Convoluted description:
-Takes a property name, `prop` along with any number of additional
-arguments, and returns a function, that takes an object of any type, and
-returns the value of `prop` on that object. If `prop` is a method, the
-returned value with be the result of evaluating that method, passing in
-the the additional arguments.
-
 ## Installation
 
 ### Browser
     $ component install timoxley/get
 
+See [Components](https://github.com/component/component/)
+
 ### Node
     $ npm install timoxley-get
 
 _Sorry for namespaced package, all good names taken._
-
-## Usage
-
-```js
-// browser
-var get = require('get')
-// node
-var get = require('timoxley-get')
-```
 
 ## Examples
 
@@ -63,6 +49,13 @@ var get = require('timoxley-get')
 ['apple', 'banana', 'pineapple'].map(get('substr', 0, 1))
 // Result: ['a', 'b', 'p']
 ```
+
+## Convoluted Description:
+Takes a property name, `prop` along with any number of additional
+arguments, and returns a function, that takes an object of any type, and
+returns the value of `prop` on that object. If `prop` is a method, the
+returned value with be the result of evaluating that method, passing in
+the the additional arguments.
 
 ## License
 
