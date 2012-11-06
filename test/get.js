@@ -1,5 +1,13 @@
-var get = require('get')
-var assert = require('timoxley-assert')
+try {
+  // browser
+  var get = require('get')
+  var assert = require('timoxley-assert')
+} catch(e) {
+  // nodejs
+  var get = require('../')
+  var assert = require('assert')
+
+}
 
 describe('get property values from object', function() {
   it('gets values', function() {

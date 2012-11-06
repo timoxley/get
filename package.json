@@ -1,0 +1,27 @@
+{
+  "name": "timoxley-get",
+  "version": "0.0.1",
+  "description": "Create functions that return a specific property of any passed object.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/get.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timoxley/get.git"
+  },
+  "keywords": [
+    "functional",
+    "map",
+    "reduce"
+  ],
+  "author": "Tim Oxley",
+  "license": "MIT",
+  "readmeFilename": "Readme.md",
+  "devDependencies": {
+    "mocha": "~1.6.0"
+  }
+}

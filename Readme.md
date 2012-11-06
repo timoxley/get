@@ -12,9 +12,19 @@ the the additional arguments.
 
 ## Installation
 
+### Browser
     $ component install timoxley/get
 
+### Node
+    $ npm install timoxley-get
+    # sorry for namespaced package, all good names taken.
+
 ## Example
+
+```
+var get = require('timoxley-get') // node
+var get = require('get') // browser
+```
 
 #### Before
 ```js
