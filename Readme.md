@@ -17,10 +17,10 @@ _Sorry for namespaced package, all good names taken._
 
 ## Examples
 
-### Before
+### Before:
+Horrible anonymous wrapper is required to map the `length` property.
+
 ```js
-// Note: horrible anonymous wrapper is required to map the `length`
-// property.
 ['apple', 'banana', 'pineapple'].map(function(str) {
  return str.length
 })
@@ -28,8 +28,9 @@ _Sorry for namespaced package, all good names taken._
 ```
 
 ### After
+Wow. Much cleaner.
+
 ```js
-// Note: Wow. Much cleaner.
 ['apple', 'banana', 'pineapple'].map(get('length'))
 // Result [5, 6, 9]
 ```
@@ -56,6 +57,8 @@ arguments, and returns a function, that takes an object of any type, and
 returns the value of `prop` on that object. If `prop` is a method, the
 returned value with be the result of evaluating that method, passing in
 the the additional arguments.
+
+Turns out this is hard to describe.
 
 ## License
 
