@@ -30,7 +30,7 @@ var get = require('get')
 var get = require('timoxley-get')
 ```
 
-#### Before
+### Before
 ```js
 // Note: horrible anonymous wrapper is required to map the `length`
 // property.
@@ -40,14 +40,14 @@ var get = require('timoxley-get')
 // Result [5, 6, 9]
 ```
 
-#### After
+### After
 ```js
 // Note: Wow. Much cleaner.
 ['apple', 'banana', 'pineapple'].map(get('length'))
 // Result [5, 6, 9]
 ```
 
-#### Use `get` to evaluate methods
+### Use `get` to evaluate methods
 
 ```js
 // Calls the 'italics' method on each supplied item
@@ -55,7 +55,7 @@ var get = require('timoxley-get')
 // Result: ['<i>apple</i>', '<i>banana</i>', '<i>pineapple</i>']
 ```
 
-#### Use `get` to evaluate methods, passing in arguments
+### Use `get` to evaluate methods, passing in arguments
 
 ```js
 // Calls the 'substr' method, passing in arguments
