@@ -1,7 +1,7 @@
 # get
 
-Create functions for use with map, reduce, filter, etc. that get object
-properties without need of anonymous wrappers.
+Create functions for use with functional methods like  `map`, `reduce`,
+`filter`, etc. that get object properties without need of anonymous wrappers.
 
 ### Convoluted description:
 Takes a property name, `prop` along with any number of additional
@@ -18,7 +18,7 @@ the the additional arguments.
 ### Node
     $ npm install timoxley-get
 
-Sorry for namespaced package, all good names taken.
+_Sorry for namespaced package, all good names taken._
 
 ## Usage
 
