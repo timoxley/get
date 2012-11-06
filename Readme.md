@@ -4,9 +4,11 @@ Create functions for use with map, reduce, filter, etc. that get object
 properties without need of anonymous wrappers.
 
 ### Convoluted description:
-Takes a property name, `prop` and returns a function, that takes an object of
-any type, and returns the value of `prop` on that object. If `prop` is a
-method, the returned value with be the result of evaluating that method.
+Takes a property name, `prop` along with any number of additional
+arguments, and returns a function, that takes an object of any type, and
+returns the value of `prop` on that object. If `prop` is a method, the
+returned value with be the result of evaluating that method, passing in
+the the additional arguments.
 
 ## Installation
 
@@ -16,7 +18,8 @@ method, the returned value with be the result of evaluating that method.
 
 #### Before
 ```js
-// Note the anonymous wrapper is required to map the `length` property.
+// Note: horrible anonymous wrapper is required to map the `length`
+// property.
 ['apple', 'banana', 'pineapple'].map(function(str) {
  return str.length
 })
@@ -25,24 +28,23 @@ method, the returned value with be the result of evaluating that method.
 
 #### After
 ```js
+// Note: Wow. Much cleaner.
 ['apple', 'banana', 'pineapple'].map(get('length'))
 // Result [5, 6, 9]
 ```
 
-#### You can also use `get` to evaluate object methods:
+#### Use `get` to evaluate methods
 
 ```js
 // Calls the 'italics' method on each supplied item
-// e.g. 'apple'.italics() // '<i>apple</i>'
 ['apple', 'banana', 'pineapple'].map(get('italics'))
 // Result: ['<i>apple</i>', '<i>banana</i>', '<i>pineapple</i>']
 ```
 
-### And pass in arguments
+#### Use `get` to evaluate methods, passing in arguments
 
 ```js
 // Calls the 'substr' method, passing in arguments
-// e.g. 'apple'.substr(0, 1) // 'a'
 ['apple', 'banana', 'pineapple'].map(get('substr', 0, 1))
 // Result: ['a', 'b', 'p']
 ```
