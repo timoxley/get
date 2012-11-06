@@ -1,8 +1,7 @@
 # get
 
-Access the value of object properties in 'functional' methods without the
-need of an anonymous function wrapper. Designed for use with map, reduce,
-filter, etc.
+Create functions for use with map, reduce, filter, etc. that get object
+properties without need of anonymous wrappers.
 
 ### Convoluted description:
 Takes a property name, `prop` and returns a function, that takes an object of

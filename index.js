@@ -1,7 +1,6 @@
 /**
- * Access the value of object properties in 'functional' methods without the
- * need of an anonymous function wrapper. Designed for use with map, reduce,
- * filter, etc.
+ * Create functions for use with map, reduce, filter, etc. that get object
+ * properties without need of anonymous wrappers.
  *
  * Returns a function, that takes an object of any type, and returns the value
  * of `prop` of that object. if prop is a method, the returned value with be

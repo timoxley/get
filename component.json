@@ -1,7 +1,7 @@
 {
   "name": "get",
   "repo": "timoxley/get",
-  "description": "Create functions that return object properties.",
+  "description": "Create functions for use with map, reduce, filter, etc. that get object properties without need for anonymous wrappers.",
   "version": "0.0.1",
   "keywords": ["functional", "map", "reduce"],
   "dependencies": {},
