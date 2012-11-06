@@ -1,7 +1,7 @@
 {
   "name": "get",
   "repo": "timoxley/get",
-  "description": "Function that returns value of a property of an object.",
+  "description": "Create functions that return object properties.",
   "version": "0.0.1",
   "keywords": ["functional", "map", "reduce"],
   "dependencies": {},

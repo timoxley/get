@@ -23,6 +23,7 @@ method, the returned value with be the result of evaluating that method.
 })
 // Result [5, 6, 9]
 ```
+
 #### After
 ```js
 ['apple', 'banana', 'pineapple'].map(get('length'))
