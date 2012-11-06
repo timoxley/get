@@ -17,13 +17,17 @@ the the additional arguments.
 
 ### Node
     $ npm install timoxley-get
-    # sorry for namespaced package, all good names taken.
+
+Sorry for namespaced package, all good names taken.
 
 ## Example
 
-```
-var get = require('timoxley-get') // node
-var get = require('get') // browser
+```js
+// browser
+var get = require('get')
+
+// node
+var get = require('timoxley-get')
 ```
 
 #### Before
