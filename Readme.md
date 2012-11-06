@@ -1,17 +1,19 @@
 # get
 
- Allows you to access object properties in 'functional' methods
- (e.g. map, reduce, filter, etc) without the need of an anonymous function
- wrapper.
+Access the value of object properties in 'functional' methods without the
+need of an anonymous function wrapper. Designed for use with map, reduce,
+filter, etc.
 
- Returns a function, that takes an object of any type, and returns the value
- of `prop` of that object. if prop is a method, the returned value with be
- the result of evaluating that method.
+### Convoluted description:
+Takes a property name, `prop` and returns a function, that takes an object of
+any type, and returns the value of `prop` on that object. If `prop` is a
+method, the returned value with be the result of evaluating that method.
+
 ## Installation
 
     $ component install timoxley/get
 
-## Examples:
+## Example
 
 #### Before
 ```js
