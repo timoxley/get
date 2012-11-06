@@ -37,8 +37,10 @@ method, the returned value with be the result of evaluating that method.
 ['apple', 'banana', 'pineapple'].map(get('italics'))
 // Result: ['<i>apple</i>', '<i>banana</i>', '<i>pineapple</i>']
 ```
+
 ### And pass in arguments
-```
+
+```js
 // Calls the 'substr' method, passing in arguments
 // e.g. 'apple'.substr(0, 1) // 'a'
 ['apple', 'banana', 'pineapple'].map(get('substr', 0, 1))
