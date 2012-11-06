@@ -3,7 +3,7 @@
   "repo": "timoxley/get",
   "description": "Function that returns value of a property of an object.",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["functional", "map", "reduce"],
   "dependencies": {},
   "development": {
     "timoxley/assert": "*"
