@@ -1,0 +1,15 @@
+{
+  "name": "get",
+  "repo": "timoxley/get",
+  "description": "Function that returns value of a property of an object.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {
+    "timoxley/assert": "*"
+  },
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
