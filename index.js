@@ -45,6 +45,6 @@ module.exports = function get(prop) {
   return function(obj) {
     return (typeof obj[prop] === 'function')
       ? obj[prop].apply(obj, args)
-      : Object.getOwnPropertyDescriptor(Object(obj), prop).value
+      : Object(obj)[prop]
   }
 }
