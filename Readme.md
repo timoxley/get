@@ -3,8 +3,9 @@
 Create functions for use with functional methods like  `map`, `reduce`,
 `filter`, etc. that get object properties without need of anonymous wrappers.
 
-[![Build Status](https://travis-ci.org/timoxley/get.png?branch=master)](https://travis-ci.org/timoxley/get)
 [![NPM](https://nodei.co/npm/timoxley-get.png)](https://nodei.co/npm/timoxley-get/)
+
+[![Build Status](https://travis-ci.org/timoxley/get.png?branch=master)](https://travis-ci.org/timoxley/get)
 [![Dependency Status](https://david-dm.org/timoxley/get.png)](https://david-dm.org/timoxley/get)
 
 ## Installation
